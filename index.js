@@ -30,4 +30,8 @@ const lisp = (string) => {
 	return true;
 };
 
+console.log(lisp("[()]{}{[()()]()}"));  // returns true
+console.log(lisp("[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]"));  // returns true
+console.log(lisp("({(()))}}"));  // returns false
+
 //
